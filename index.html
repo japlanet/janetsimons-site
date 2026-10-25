@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Janet Simons · Upmarket Suspense</title>
+<meta name="description" content="Janet Simons writes upmarket suspense set in Vancouver. Two complete novels: Incidental Finding and AS-BUILT.">
+<meta property="og:title" content="Janet Simons · Upmarket Suspense">
+<meta property="og:description" content="Two standalone novels about one Vancouver marriage. Same family, different fraud.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janetsimons.ca/">
+<meta property="og:image" content="https://janetsimons.ca/images/headshot.jpg">
+<link rel="canonical" href="https://janetsimons.ca/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%231c1b19'/><text x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f3efe6' text-anchor='middle'>JS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3efe6;
+    --paper-2: #ebe5d8;
+    --ink: #1c1b19;
+    --muted: #5e5a51;
+    --rule: #cfc7b6;
+    --accent: #9a3a1c;       /* oxidized rust: used sparingly */
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --gutter: clamp(16px, 5vw, 64px);
+    --max: 1120px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161513;
+      --paper-2: #1e1c19;
+      --ink: #ece6da;
+      --muted: #a39d90;
+      --rule: #3a3731;
+      --accent: #d5774f;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: clamp(17px, 1.05rem + 0.2vw, 19px);
+    line-height: 1.6;
+    font-optical-sizing: auto;
+  }
+  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* Small mono labels read like a drawing title block or a report header */
+  .label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- Header / hero ---------- */
+  header.hero {
+    padding: clamp(56px, 12vh, 140px) 0 clamp(40px, 8vh, 96px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero h1 {
+    font-weight: 400;
+    font-size: clamp(2.8rem, 2rem + 5vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin: 0.35em 0 0.3em;
+  }
+  .hero .tag {
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 1rem + 1.4vw, 2rem);
+    margin: 0;
+  }
+  .hero .sub {
+    max-width: 34em;
+    color: var(--muted);
+    margin: 1.2em 0 0;
+  }
+  nav.top {
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    margin-top: 2.2rem;
+  }
+  nav.top a { text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px; }
+  nav.top a:hover { border-color: var(--accent); }
+
+  /* ---------- Books ---------- */
+  section { padding: clamp(48px, 9vh, 110px) 0; }
+  .pair-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .pair-head h2 {
+    font-weight: 400; font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem);
+    margin: 0;
+  }
+  .pair-head h2 em { color: var(--accent); }
+
+  .books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--rule);
+  }
+  .book {
+    padding: clamp(24px, 3.5vw, 48px);
+    display: flex; flex-direction: column;
+  }
+  .book + .book { border-left: 1px solid var(--rule); }
+  .book .meta {
+    display: flex; justify-content: space-between; gap: 1rem;
+    padding-bottom: 0.9rem; border-bottom: 1px solid var(--rule);
+  }
+  .book h3 {
+    font-weight: 400;
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 1.4rem 0 0.2rem;
+  }
+  .book .pov { font-style: italic; color: var(--muted); margin: 0 0 1.2rem; }
+  .book p.hook { margin: 0 0 1em; }
+  .book .tagline {
+    margin: auto 0 0; padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.4;
+    text-wrap: balance;
+    color: var(--accent);
+  }
+  .book .tagline span { display: block; }   /* one sentence per line */
+
+  .pair-note {
+    margin-top: 1.6rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  /* ---------- About ---------- */
+  #about { background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .about {
+    display: grid; grid-template-columns: 260px 1fr; gap: clamp(28px, 5vw, 72px);
+    align-items: start;
+  }
+  .about figure { margin: 0; }
+  .about img {
+    width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; display: block;
+    filter: grayscale(0.15);
+  }
+  .about .placeholder {
+    width: 100%; aspect-ratio: 4 / 5;
+    border: 1px dashed var(--rule);
+    display: grid; place-items: center;
+    font-family: var(--serif); font-size: 3.5rem; color: var(--muted);
+  }
+  .about figcaption { margin-top: 0.5rem; }
+  .about h2 { font-weight: 400; font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem); margin: 0.3em 0 0.6em; }
+  .about p { max-width: 36em; margin: 0 0 1em; }
+
+  /* ---------- Contact ---------- */
+  #contact h2 { font-weight: 400; font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem); margin: 0.3em 0 0.4em; }
+  #contact p { max-width: 36em; }
+  .email {
+    font-size: clamp(1.25rem, 1rem + 1.2vw, 1.8rem);
+    word-break: break-word;
+  }
+
+  .signup {
+    margin-top: clamp(40px, 7vh, 72px);
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--rule);
+    max-width: 36em;
+  }
+  .signup p { margin: 0.5em 0 1em; }
+  .signup form { display: flex; gap: 0; max-width: 30em; }
+  .signup input[type="email"] {
+    flex: 1; min-width: 0;
+    font: inherit; color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--rule); border-right: 0;
+    padding: 0.6em 0.8em;
+    border-radius: 0;
+  }
+  .signup input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .signup button {
+    font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
+    background: var(--ink); color: var(--paper);
+    border: 1px solid var(--ink);
+    padding: 0 1.2em; cursor: pointer;
+    border-radius: 0;
+  }
+  .signup button:hover { background: var(--accent); border-color: var(--accent); }
+  .signup button:disabled { opacity: 0.6; cursor: default; }
+  .signup-msg { min-height: 1.2em; margin: 0.6em 0 0 !important; color: var(--accent); }
+  .signup-fine { font-size: 0.85rem; color: var(--muted); }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .visually-hidden {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 28px 0 40px;
+  }
+  footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+  /* ---------- Small screens ---------- */
+  @media (max-width: 760px) {
+    .books { grid-template-columns: 1fr; }
+    .book + .book { border-left: 0; border-top: 1px solid var(--rule); }
+    .about { grid-template-columns: 1fr; }
+    .about figure { max-width: 220px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="label">Vancouver · Upmarket suspense</div>
+    <h1>Janet Simons</h1>
+    <p class="tag">Suspense without spectacle.</p>
+    <p class="sub">Two standalone novels about one Vancouver marriage, and the people who write the record when a city builds something it can't afford to get wrong.</p>
+    <nav class="top" aria-label="Sections">
+      <a href="#novels">The novels</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="novels">
+    <div class="wrap">
+      <div class="pair-head">
+        <h2>Same family, <em>different fraud.</em></h2>
+        <span class="label">Two complete manuscripts</span>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <div class="meta label"><span>Novel</span><span>c. 70,000 words</span></div>
+          <h3>Incidental Finding</h3>
+          <p class="pov">Theo's story</p>
+          <p class="hook">Radiologist Theo Voss has built his career around one fear: the finding you talk yourself out of. Six months before the sickest patients in the city are moved into a new hospital, a misdirected email tells him a safety test was run again until it came back inside tolerance. Then the chest X-rays from the new tower start to look wrong.</p>
+          <p class="hook">Asking about it costs him his role, his privileges, and very nearly his licence.</p>
+          <p class="tagline">Every finding is incidental when you're not allowed to look.</p>
+        </article>
+
+        <article class="book">
+          <div class="meta label"><span>Novel</span><span>c. 67,000 words</span></div>
+          <h3>AS-BUILT</h3>
+          <p class="pov">Mara's story</p>
+          <p class="hook">Mara Voss runs a one-woman construction marketing firm from her kitchen island. She is brilliant at making clients look good on screen and terrible at asking what's behind the picture. Her biggest client is building a $196-million aquatic centre where the records don't match the work, and she has been quietly burying the questions.</p>
+          <p class="hook">After a worker dies on site, she has to turn her own tools against the false record she helped create.</p>
+          <p class="tagline"><span>The record said it was built right.</span> <span>She wrote the record.</span></p>
+        </article>
+      </div>
+
+      <p class="pair-note">Each novel stands alone. Read together, they are one marriage seen from both sides.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <figure>
+        <!-- Drop the headshot in images/headshot.jpg (portrait, roughly 4:5). Falls back to initials if missing. -->
+        <img src="images/headshot.jpg" alt="Janet Simons"
+             onerror="this.outerHTML='<div class=&quot;placeholder&quot; aria-hidden=&quot;true&quot;>JS</div>'">
+        <figcaption class="label">Photo: Carlos Taylhardat</figcaption>
+      </figure>
+      <div>
+        <div class="label">About</div>
+        <h2>Janet Simons</h2>
+        <p>Janet Simons is a practising physician in Vancouver, BC. Her specialty is laboratory medicine, where she reads results that other people will act on.</p>
+        <p>Her fiction is set in the Vancouver where she works: hospitals, construction sites, and the offices where someone decides what goes into the record. <i>Incidental Finding</i> and <i>AS&#8209;BUILT</i> are her first two novels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="label">Contact</div>
+      <h2>Representation enquiries</h2>
+      <p>Both manuscripts are complete. Full manuscripts are available on request.</p>
+      <p class="email"><a href="mailto:drjanetwrites@gmail.com">drjanetwrites@gmail.com</a></p>
+
+      <div class="signup" id="news">
+        <div class="label">Book news</div>
+        <p>Be the first to know when these books find a home. One email when there's a book to buy, and nothing else.</p>
+        <!-- Posts straight to a Google Form; responses land in Janet's linked Google Sheet. -->
+        <form id="signup-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdFLGSDsRTi_pVSAdJzyYUNGqE26HewypyjLyzsspAQ3AgfYA/formResponse" method="POST">
+          <label for="signup-email" class="visually-hidden">Email address</label>
+          <input id="signup-email" type="email" name="entry.439077793" placeholder="you@example.com" autocomplete="email" required>
+          <!-- Honeypot: hidden from people, bots tend to fill it in -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+          <button type="submit">Notify me</button>
+        </form>
+        <p class="signup-msg label" id="signup-msg" role="status" aria-live="polite"></p>
+        <p class="signup-fine">By signing up you agree to receive that email. Reply to it any time to be removed.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="label">© 2026 Janet Simons</span>
+    <span class="label">Vancouver, British Columbia</span>
+  </div>
+</footer>
+
+<script>
+  // Submit in the background so visitors stay on the page. Google Forms doesn't
+  // allow reading the response cross-origin (no-cors), so success is assumed once
+  // the request goes out. Without JavaScript the form still posts normally.
+  (function () {
+    var form = document.getElementById('signup-form');
+    var msg = document.getElementById('signup-msg');
+    if (!form || !window.fetch) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var done = function () {
+        form.reset();
+        form.style.display = 'none';
+        msg.textContent = "Thanks. You're on the list.";
+      };
+      if (form.website.value) { done(); return; }   // honeypot tripped: quietly drop it
+      var btn = form.querySelector('button');
+      btn.disabled = true;
+      var body = new URLSearchParams();
+      body.append('entry.439077793', form.elements['entry.439077793'].value.trim());
+      fetch(form.action, { method: 'POST', mode: 'no-cors', body: body })
+        .then(done)
+        .catch(function () {
+          btn.disabled = false;
+          msg.textContent = 'Something went wrong. Please try again, or email me directly.';
+        });
+    });
+  })();
+</script>
+
+</body>
+</html>
