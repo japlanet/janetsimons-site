@@ -216,9 +216,12 @@
   footer .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
   /* ---------- Small screens ---------- */
-  @media (max-width: 760px) {
+  @media (max-width: 880px) {
     .books { grid-template-columns: 1fr; }
     .book + .book { border-left: 0; border-top: 1px solid var(--rule); }
+    .book { padding: 26px 18px; }
+    /* Scale taglines with the screen so each sentence keeps its own line */
+    .book .tagline { font-size: min(1.15em, 5vw); }
     .about { grid-template-columns: 1fr; }
     .about figure { max-width: 220px; }
   }
